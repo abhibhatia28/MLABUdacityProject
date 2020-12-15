@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
+#import os
 import logging
 
 import pandas as pd
@@ -67,5 +68,9 @@ def predict():
 
 if __name__ == "__main__":
     # load pretrained model as clf
+   # dir_path = os.path.dirname(os.path.realpath(__file__))
+    #dir_path = os.chdir(dir_path)
+    #fullpath = os.path.join(dir_path, "./model_data/boston_housing_prediction.joblib")
+    #clf = joblib.load(fullpath) 
     clf = joblib.load("./model_data/boston_housing_prediction.joblib")
     app.run(host='0.0.0.0', port=80, debug=True) # specify port=80
