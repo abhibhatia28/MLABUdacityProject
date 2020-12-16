@@ -20,3 +20,13 @@
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
 172.17.0.1 - - [10/Dec/2020 22:16:27] "POST /predict HTTP/1.1" 200 -
+
+
+
+# Prediction from another terminal:
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
