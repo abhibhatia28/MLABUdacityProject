@@ -2,28 +2,26 @@
 Flag --generator has been deprecated, has no effect and will be removed in the future.
 Error from server (AlreadyExists): pods "abapi" already exists
 NAME    READY   STATUS    RESTARTS   AGE
-abapi   1/1     Running   0          28s
-Forwarding from 127.0.0.1:8000 -> 80
-Forwarding from [::1]:8000 -> 80
-^C(.devops) abhibhatia:~/environment/UdaProjs/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ kubectl get pods
-NAME    READY   STATUS    RESTARTS   AGE
-abapi   1/1     Running   0          94s
-(.devops) abhibhatia:~/environment/UdaProjs/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh
-Flag --generator has been deprecated, has no effect and will be removed in the future.
-Error from server (AlreadyExists): pods "abapi" already exists
-NAME    READY   STATUS    RESTARTS   AGE
-abapi   1/1     Running   0          2m
+abapi   1/1     Running   0          4m26s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
 Handling connection for 8000
-Handling connection for 8000
 
 
-# prediction in another terminal:
+# From another terminal
+(.devops) abhibhatia:~/environment/UdaProjs/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./make_prediction.sh
 Port: 8000
 {
   "prediction": [
     20.35373177134412
   ]
 }
+(.devops) abhibhatia:~/environment/UdaProjs/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+(.devops) abhibhatia:~/environment/UdaProjs/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ 
