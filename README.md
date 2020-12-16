@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![abhibhatia28](https://circleci.com/gh/abhibhatia28/MLABUdacityProject.svg?style=svg)](https://app.circleci.com/pipelines/github/abhibhatia28/MLABUdacityProject)
 
 ## Project Overview
 
